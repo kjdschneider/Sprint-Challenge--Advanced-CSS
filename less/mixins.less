@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.format(@width, @padding){
+    width: @width;
+    padding: @padding;
+}
+
+.button(@color, @border){
+    color: @color;
+    background: @btn-bg-color;
+    border: @border;
+    border-radius: 10px;
+    width: 40%;
+    height: 18%;
+    text-align: center;
+    padding: 5%;
+    font-size: 2rem;
+}

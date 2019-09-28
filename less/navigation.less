@@ -1,1 +1,38 @@
 // Navigation code here
+#topNav {
+    .format(100%, 2%);
+    background: @nav-bg;
+    font-family: @nav-font;
+    border-bottom: 1px solid @sea-shell;
+    .flex(center, center);
+    flex-direction: column;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        .flex(space-evenly, center);
+        width: 50%;
+        flex-wrap: wrap;
+        min-width: 450px;
+
+        a {
+            text-decoration: none;
+            color: gray;
+            font-size: 1.8rem;
+
+            &:hover {
+                color: lightgray;
+                transition: .1s;
+            }
+
+            &:active {
+                color: @nav-bg;
+            }
+        }
+    }
+
+
+}

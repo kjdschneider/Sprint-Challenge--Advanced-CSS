@@ -4,6 +4,11 @@
 
   .intro {
 
+    img {
+      border-radius: 5px;
+      margin-bottom: 1%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -58,6 +63,20 @@
       }
 
       .btn {
+        .button(@sea-shell, 5px solid @shuttle-gray);
+
+        &:hover {
+          color: @btn-bg-color;
+          background: @sea-shell;
+          border: 5px solid lighten(@shuttle-gray, 30%);
+          transition: .1s;
+        }
+
+        &:active{
+          color: darken(@btn-bg-color, 30%);
+          background: darken(@sea-shell, 30%);
+          border: 5px solid lighten(@shuttle-gray, 30%);
+        }
       }
     }
 
