@@ -1,1 +1,54 @@
 // Navigation code here
+#topNav {
+    .format(100%, 2%);
+    background: @nav-bg;
+    font-family: @nav-font;
+    border-bottom: 1px solid @sea-shell;
+    .flex(center, center);
+    flex-direction: column;
+    height: 120px;
+    position: fixed;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+
+        @media @phone {
+            font-size: 3.5rem;
+        }
+    }
+
+    nav {
+        .flex(space-evenly, center);
+        width: 50%;
+        min-width: 450px;
+
+        @media @phone{
+            min-width: auto;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: @shuttle-gray;
+            font-size: 1.8rem;
+
+            @media @phone {
+                font-size: 1.6rem;
+            }
+
+            &:hover {
+                color: lightgray;
+                transition: .1s;
+            }
+
+            &:active {
+                color: @nav-bg;
+            }
+        }
+    }
+
+
+}
